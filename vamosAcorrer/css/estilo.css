@@ -3,3 +3,6 @@ h1 {color: #070EF2;
 	text-decoration: underline;
 	text-transform: uppercase;}
 font-family {"Garamond", Times, serif;}
+.destacado{
+	color: red;
+}
