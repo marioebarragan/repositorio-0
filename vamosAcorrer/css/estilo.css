@@ -15,8 +15,8 @@ p{
 }
 div {
 	background-color: lightgrey;
-	width: 2000px;
-	border: 25px solid green;
-	padding: 25px;
-	margin: 25px;
+	width: 1000px;
+	border: 2px solid green;
+	padding: 2px;
+	margin: 2px;
 }
