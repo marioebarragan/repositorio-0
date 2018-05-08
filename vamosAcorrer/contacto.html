@@ -13,7 +13,7 @@
 
 <body>
 
-<form action="contacto.html" method="POST">
+<!--form action="contacto.html" method="POST">
 <h2>Contáctanos</h2>
 <p>
 Para nosotros es un placer atenderte. Por eso, te ofrecemos diferentes medios para responder a cada una de tus solicitudes de la manera que más te convenga.
@@ -22,7 +22,7 @@ Para nosotros es un placer atenderte. Por eso, te ofrecemos diferentes medios pa
 <table class="table">
 <tbody>
 	<tr class="active">
-		<td><label class="active" for="Nombre">Nombre: </label></td>
+		<td><label for="Nombre">Nombre: </label></td>
 		<td><input id="Nombre" name="Nombre" type="text" required></td>
 	</tr>
 	<tr class="active">
@@ -44,6 +44,34 @@ Para nosotros es un placer atenderte. Por eso, te ofrecemos diferentes medios pa
 <button type="submit" class="btn btn-success">Enviar mensaje</button><br><br>
 <a href="http://www.facebook.com"><img width="40" height="40" src="../vamosAcorrer/img/icono-redondo-facebook.jpg"></a><a href="http://www.facebook.com"><img width="40" height="40" src="../vamosAcorrer/img/in.jpg"></a>
 <a href="http://www.instagram.com"><img width="40" height="40" src="../vamosAcorrer/img/instagram-redondo.jpg"></a><a href="http://www.twitter.com"><img width="40" height="40" src="../vamosAcorrer/img/twitter.jpg"></a>
-</form>
+</form-->
+
+<div class="container">
+  <h2>Contáctanos</h2>
+  <p>
+	Para nosotros es un placer atenderte. Por eso, te ofrecemos diferentes medios para responder a cada una de tus solicitudes de la manera que más te convenga.
+  </p>
+ <form action="contacto.html" method="POST">
+    <div class="form-group">
+	  <label for="Nombre">Nombre: </label> 
+	  <input id="Nombre" name="Nombre" type="text" class="form-control" required>
+    </div>
+	<div class="form-group">
+	 <label for="Apellido">Apellido: </label>
+	 <input id="Apellido" name="Apellido" type="text" class="form-control" required>
+	</div>
+    <div class="form-group">
+	  <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Ingrese email">
+    </div>
+    <div class="form-group">
+	  <label for="Mensaje">Mensaje: </label>
+      <textarea id="Mensaje" name="Mensaje" rows="4" cols="50" autocomplete="on" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Enviar mensaje</button>
+  </form>
+</div>
+<a href="http://www.facebook.com"><img width="40" height="40" src="../vamosAcorrer/img/icono-redondo-facebook.jpg"></a><a href="http://www.facebook.com"><img width="40" height="40" src="../vamosAcorrer/img/in.jpg"></a>
+<a href="http://www.instagram.com"><img width="40" height="40" src="../vamosAcorrer/img/instagram-redondo.jpg"></a><a href="http://www.twitter.com"><img width="40" height="40" src="../vamosAcorrer/img/twitter.jpg"></a>
 </body>
 </html>
