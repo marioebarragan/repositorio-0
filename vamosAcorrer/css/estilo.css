@@ -2,7 +2,9 @@ h1 {color: #070EF2;
 	text-align: center;
 	text-decoration: underline;
 	text-transform: uppercase;}
-font-family {"Garamond", Times, serif;}
+body {
+font-family "Garamond", Times, serif;
+}
 .destacado{
 	color: blue;
 }
