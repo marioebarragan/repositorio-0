@@ -3,7 +3,7 @@ h1 {color: #070EF2;
 	text-decoration: underline;
 	text-transform: uppercase;}
 body {
-font-family "Garamond", Times, serif;
+    font-family: 'Sofia';font-size: 22px;
 }
 .destacado{
 	color: blue;
