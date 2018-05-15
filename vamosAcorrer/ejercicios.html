@@ -14,13 +14,17 @@
     <div>
 	  <label>Altura del medio-árbol: </label> 
 	  <input id="Altura" name="Altura" type="number" required>
-	  <button type="button" >Calcular</button>
+	  <input type="submit" name="cal" class="cal" value="submit" onclick="cal()" >Calcular</button>
 	  <p id="mostrar"></p>
 	  <script>
 	  var text = "";
 	  var i;
-	  for (i = 0; i < 5; i++){
+	  var alt = null;
+	  function cal(){
+	  alt = document.getElementById("Altura");
+	  for (i = 0; i < alt; i++){
 	  text += "*" + i + "<br>";
+	  }
 	  }
 	  document.getElementById("mostrar").innerHTML = text;
       </script>
