@@ -13,8 +13,20 @@
     <div>
 	  <label>Altura del medio-árbol: </label> 
 	  <input id="Altura" name="Altura" type="number" required>
+	  <button type="button" onclick="FuncionArbol()">Calcular</button>
+	  <p id="mostrar"></p>
+	  <script>
+	  function FuncionArbol{
+	  var text = "";
+	  var i;
+	  for (i = 0; i, < Altura; i++){
+	  text += "" + i + "<br>";
+	  }
+	  document.getElementById("mostrar").innerHTML = text;
+	  }
+	  </script>
     </div>
-	<button type="submit">Aceptar</button>
+	
   </form>
 </div>
 </body>
