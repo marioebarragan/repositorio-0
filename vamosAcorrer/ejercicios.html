@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<script>
+	  var text = "";
+	  var i;
+	  var alt = null;
+	  function cal(){
+	  alt = document.getElementById("Altura");
+	  for (i = 1; i < alt; i++){
+	  text += "*" + i + "<br>";
+	  }
+	  }
+	  document.getElementById("mostrar").innerHTML = text;
+</script>
+	
 <meta charset="UTF-8">
 
 <title>JavaScript</title>
@@ -16,18 +29,6 @@
 	  <input id="Altura" name="Altura" type="number" required>
 	  <input type="submit" name="cal" class="cal" value="Calcular" onclick="cal()">
 	  <p id="mostrar"></p>
-	  <script>
-	  var text = "";
-	  var i;
-	  var alt = null;
-	  function cal(){
-	  alt = document.getElementById("Altura");
-	  for (i = 1; i < alt; i++){
-	  text += "*" + i + "<br>";
-	  }
-	  document.getElementById("mostrar").innerHTML = text;
-	  }
-	</script>
     </div>
 	
   </form>
