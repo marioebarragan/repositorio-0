@@ -15,7 +15,7 @@
    	<script>
 		function ObtenerNro()
 		{
-			return document.getElementById('n').value;
+			return document.getElementById('nro').value;
 		}
 	</script>	
 	<title>JavaScript</title>
@@ -32,8 +32,8 @@
 				var altura= medioArbol(5);
 				document.getElementById("demo").innerHTML = altura;
 			</script-->
-			<input type="text" value="" id="n">
-            <input type="button" value="crear" id="c" onclick="document.getElementById('demo').innerHTML=medioArbol(ObtenerNro())" >  			
+			<input type="text" value="" id="nro">
+            <input type="button" value="Dibujar Arbol" id="dibujar" onclick="document.getElementById('demo').innerHTML=medioArbol(ObtenerNro())" >  			
 		</div>
 	</form>
 </div>
