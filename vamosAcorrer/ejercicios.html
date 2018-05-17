@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<script>
-var alt= medioArbol(5);
-
-document.getElementById("demo").innerHTML = alt;
-
-function medioArbol(altura)
-{
-	var arbol="<br>";
-for (var i = 1; i<= altura; i++) { 
-    arbol += '*'.repeat(i) + "<br>";
-	
-} 	
-return arbol;
-}
-</script>
 	
 <meta charset="UTF-8">
 <script type="text/js" rel="stylesheet" href="js/js1.js" ></script>
@@ -31,7 +16,19 @@ return arbol;
     <div>
 	  <label>Altura del medio-árbol: </label> 
 	  <p id="demo"></p>
-	  <input type="button" onclick="medioArbol()" value="Activar Función">
+	  <script>
+		var alt= medioArbol(5);
+		document.getElementById("demo").innerHTML = alt;
+		function medioArbol(altura)
+		 {
+		var arbol="<br>";
+		for (var i = 1; i<= altura; i++) { 
+		arbol += '*'.repeat(i) + "<br>";
+		 } 	
+		return arbol;
+		}
+	 </script>
+    <input type="button" onclick="medioArbol()" value="Activar Función">
     </div>
 	
   </form>
