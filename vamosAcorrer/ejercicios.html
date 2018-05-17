@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	
-<meta charset="UTF-8">
-<!--script type="text/js" rel="stylesheet" href="js/js1.js" ></script-->
-    <script>
-  	    function medioArbol(altura)
-		 {
-		var arbol="<br>";
-		for (var i = 1; i<= altura; i++) { 
-		arbol += '*'.repeat(i) + "<br>";
-		 } 	
-		return arbol;
-		}
-	 </script>
-   
-<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script type="text/js" rel="stylesheet" href="js/js1.js" ></script>
+	<title>JavaScript</title>
 </head>
 <center><h3><strong>Ejercicios</strong></h3></center>
 <body>
-
 <div class="container">
-  <h2>Parte II</h2>
- <form action="ejercicios.html" method="POST">
-    <div>
-	  <label>Altura del medio-árbol: </label> 
-	  <p id="demo"></p>
-	  <script>
-		var altura= medioArbol(5);
-		document.getElementById("demo").innerHTML = altura;
-	  </script>	
-	  <input type="button" onclick="medioArbol(6);" value="Activar Función">
-    </div>
-	
-  </form>
+<h2>Parte II</h2>
+	<form action="ejercicios.html" method="POST">
+		<div>
+			<label>Altura del medio-árbol: </label> 
+			<p id="demo"></p>
+			<script>
+				var altura= medioArbol(5);
+				document.getElementById("demo").innerHTML = altura;
+			</script>	
+		</div>
+	</form>
 </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<body>
 </body>
 </html>
