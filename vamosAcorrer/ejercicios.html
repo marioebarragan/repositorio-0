@@ -20,37 +20,37 @@
 	</script>
 	
 	<script>
-	function Dia(dias){
-		var dias;
+	function ODia(dias){
+		var dia;
 		switch (new date().getDay()) {
 		case 1:
-			dias = "Lunes";
+			dia = "Lunes";
         break;
 		case 2:
-			dias = "Martes";
+			dia = "Martes";
         break;
 		case 3:
-			dias = "Miércoles";
+			dia = "Miércoles";
         break;
 		case 4:
-			dias = "Jueves";
+			dia = "Jueves";
         break;
 		case 5:
-			dias = "Viernes";
+			dia = "Viernes";
 		break;
 		case 6:
-			dias = "Fin de Semana";
+			dia = "Fin de Semana";
         break;
 		case 7:
-			dias = "Fin de Semana";
+			dia = "Fin de Semana";
 		}
-		return dias;
+		return dia;
 		}
 	</script>
 	<script>
 		function ObtenerDias()
 		{
-			return document.getElementById('dias').value;
+			return document.getElementById('dia').value;
 		}
 	</script>	
 	
@@ -74,8 +74,8 @@
 			
 			<label>Los días</label> 
 			<p id="demo2"></p>
-			<input type="text" value="" id="dias">
-            <input type="button" value="Ingrese nro." id="mostrarDias" onclick="document.getElementById('demo2').innerHTML=Dia(ObtenerDias())" >  			
+			<input type="text" value="" id="dia">
+            <input type="button" value="Ingrese nro." id="mostrarDias" onclick="document.getElementById('demo2').innerHTML=ODia(ObtenerDias())" >  			
 			
 		</div>
 	</form>
