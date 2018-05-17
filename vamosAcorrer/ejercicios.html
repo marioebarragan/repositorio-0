@@ -2,20 +2,10 @@
 <html lang="es">
 <head>
 <script>
-	  var text = "";
-	  var i;
-	  var alt = null;
-	  function cal(){
-	  alt = document.getElementById("Altura");
-	  for (i = 1; i < alt; i++){
-	  text += "*" + i + "<br>";
-	  }
-	  }
-	  document.getElementById("mostrar").innerHTML = text;
-	  cal();
 </script>
 	
 <meta charset="UTF-8">
+<link type="text/css" rel="stylesheet" href="css/js1.css">
 
 <title>JavaScript</title>
 </head>
@@ -27,12 +17,16 @@
  <form action="ejercicios.html" method="POST">
     <div>
 	  <label>Altura del medio-árbol: </label> 
-	  <input id="Altura" name="Altura" type="number" required>
-	  <input type="submit" name="cal" class="cal" value="Calcular" onclick="cal()">
-	  <p id="mostrar"></p>
+	  <p id="demo"></p>
     </div>
 	
   </form>
 </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
 </body>
 </html>
