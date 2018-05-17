@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <!--script type="text/js" rel="stylesheet" href="js/js1.js" ></script-->
     <script>
-	"<p id="demo"></p>";
   	    var alt= medioArbol(5);
 		document.getElementById("demo").innerHTML = alt;
 		function medioArbol(altura)
@@ -28,7 +27,8 @@
  <form action="ejercicios.html" method="POST">
     <div>
 	  <label>Altura del medio-árbol: </label> 
-	 <input type="button" onclick="medioArbol()" value="Activar Función">
+	  <p id="demo"></p>
+	  <input type="button" onclick="medioArbol()" value="Activar Función">
     </div>
 	
   </form>
