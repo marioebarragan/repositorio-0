@@ -6,7 +6,7 @@
 		function medioArbol(altura)
 		{
 			var arbol="<br>";
-			for (var i = 1; i<= altura; i++) { 
+			for (var i = 0; i<= altura; i++) { 
 			arbol += '*'.repeat(i) + "<br>";
 			} 	
 		return arbol;
@@ -32,6 +32,7 @@
 				var altura= medioArbol(5);
 				document.getElementById("demo").innerHTML = altura;
 			</script-->
+			<input type="text" value="" id="n">
             <input type="button" value="crear" id="c" onclick="document.getElementById('demo').innerHTML=medioArbol(ObtenerNro())" >  			
 		</div>
 	</form>
