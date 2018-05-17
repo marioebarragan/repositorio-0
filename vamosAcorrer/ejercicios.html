@@ -17,8 +17,45 @@
 		{
 			return document.getElementById('nro').value;
 		}
+	</script>
+	
+	<script>
+	function Dia(dias){
+		var dias;
+		switch (new date().getDay()) {
+		case 1:
+			dias = "Lunes";
+        break;
+		case 2:
+			dias = "Martes";
+        break;
+		case 3:
+			dias = "Miércoles";
+        break;
+		case 4:
+			dias = "Jueves";
+        break;
+		case 5:
+			dias = "Viernes";
+		break;
+		case 6:
+			dias = "Fin de Semana";
+        break;
+		case 7:
+			dias = "Fin de Semana";
+		}
+		return dias;
+		}
+	</script>
+	<script>
+		function ObtenerDias()
+		{
+			return document.getElementById('dias').value;
+		}
 	</script>	
-	<title>JavaScript</title>
+	
+	
+<title>JavaScript</title>
 </head>
 <center><h3><strong>Ejercicios</strong></h3></center>
 <body>
@@ -34,6 +71,12 @@
 			</script-->
 			<input type="text" value="" id="nro">
             <input type="button" value="Dibujar Arbol" id="dibujar" onclick="document.getElementById('demo').innerHTML=medioArbol(ObtenerNro())" >  			
+			
+			<label>Los días</label> 
+			<p id="demo2"></p>
+			<input type="text" value="" id="nro2">
+            <input type="button" value="Ingrese nro." id="mostrarDias" onclick="document.getElementById('demo2').innerHTML=Dia(ObtenerDias())" >  			
+			
 		</div>
 	</form>
 </div>
