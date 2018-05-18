@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+		var valores = [];
+		var longitud = prompt("Ingrese longitud del arreglo:");
+		lng = longitud;
+		while (lng !== 0) {
+			valores.push(prompt("Ingrese sus valores:"));
+		    lng -= 1;
+		} 
+		
+		resultado = a(longitud,valores);
+		
+		document.getElementById("demo").innerHTML = resultado;
+
+		function a(longitud,valores)
+		{
+			//var arr = valores.split(" ");
+			arr = valores;
+			var suma=0;
+			var rep = longitud;
+				for (var i=0; i<rep; i++) { 
+							//suma += Number(arr[i]);
+							debugger
+							suma += arr[i];
+							console.log(i);
+				}
+				return (suma/rep);
+		} 	
+</script>
+</body>
+</html>
