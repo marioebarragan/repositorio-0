@@ -7,6 +7,9 @@ body {
 .destacado{
 	color: blue;
 }
+.encabezado{
+	background-color: #e6f9ff;
+}
 strong{
 	font-weight: normal;
 }
