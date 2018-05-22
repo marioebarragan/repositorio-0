@@ -42,7 +42,7 @@ function validar_edad(){
 	try{
 		if(e == "") throw "Complete este campo";
 		if(isNaN(e)) throw "No es un numero";
-		debugger; 
+		//debugger; 
 		e = Number(e);
 		if(e < 18) throw "Edad no validad";
 	}
