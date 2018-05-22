@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/js" rel="stylesheet" href="js/jquery.min.js" ></script>
+<script type="text/js" rel="stylesheet" href="js/bootstrap.min.js" ></script>
+<script type="text/js" rel="stylesheet" href="css/bootstrap-grid.min.css" ></script>
+
+<link type="text/css" rel="stylesheet" href="css/mobilefirst.css">
+
+<title>Formulario</title>
+
+<script>
+function validar_datos(){
+	var mensaje, x;
+	mensaje = document.getElementById("mensaje");
+	
+	mensaje.innerHTML = "";
+	x = document.getElementById("nombre").value;
+	try{
+		if (x == "") throw "Complete este campo";
+		if (!(isNaN(x))) throw "No esta permitido ingresar numeros";
+	}
+	
+catch(err){
+	mensaje.innerHTML = "Error: " + err;
+	}
+}
+</script>
+
+<script>
+function validar_edad(){
+	var mensaje2, e;
+	mensaje2 = document.getElementById("mensaje2");
+	
+	mensaje2.innerHTML = "";
+	e = document.getElementById("edad").value;
+	try{
+		if(e == "") throw "Complete este campo";
+		if(isNaN(e)) throw "No es un numero";
+		debugger; 
+		e = Number(e);
+		if(e < 18) throw "Edad no validad";
+	}
+	catch(err){
+		mensaje2.innerHTML = "Error: " + err;
+	}
+}
+</script>
+
+
+<script>
+   function CambiarSelect() {
+    var selectBox = document.getElementById("sexo");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    //alert(selectedValue);
+	switch (selectedValue) {
+		case "Hombre":
+	     
+        break;
+		case "Mujer":
+		
+		break;
+		}
+   }
+</script>
+
+</head>
+<center><h3><strong>Formulario de Ingreso</strong></h3></center>
+
+<body>
+<div class="container">
+<form action="formulario.html" method="POST">
+    <div class="form-group">
+	  <label for="nombre">Nombre: </label> 
+	  <input id="nombre" name="nombre" type="text" class="form-control" required>
+	  <p id="mensaje"></p>
+    </div>
+	<div class="form-group">
+	  <label for="email">E-mail:</label>
+      <input type="email" class="form-control" id="email" placeholder="Ingrese email" required>
+    </div>
+	<div class="form-group">
+	 <label for="edad">Edad: </label>
+	 <input id="edad" name="edad" type="number" class="form-control" required>
+	 <p id="mensaje2"></p>
+	</div>
+    <div class="form-group">
+	  <label for="sexo">Sexo: </label>
+	  <select id="sexo" name="sexo" class="form-group" onchange="CambiarSelect();">
+		  <option>Hombre</option>
+		  <option>Mujer</option>
+	  </select>
+    </div>
+    <button type="submit" class="btn btn-success" onclick="validar_edad(); validar_datos();" >Enviar mensaje</button>
+</form><br>
+</div>
+</body>
+</html>
