@@ -58,14 +58,15 @@ function validar_edad(){
     var selectBox = document.getElementById("sexo");
     var selectedValue = selectBox.options[selectBox.selectedIndex].value;
     //alert(selectedValue);
+	debugger;
 	switch (selectedValue) {
 		case "Hombre":
-	     
+	    
         break;
 		case "Mujer":
 		
-		break;
 		}
+		return; 
    }
 </script>
 
@@ -91,7 +92,7 @@ function validar_edad(){
 	</div>
     <div class="form-group">
 	  <label for="sexo">Sexo: </label>
-	  <select id="sexo" name="sexo" class="form-group" onchange="CambiarSelect();">
+	  <select id="sexo" name="sexo" class="form-group" onchange="CambiarSelect()">
 		  <option>Hombre</option>
 		  <option>Mujer</option>
 	  </select>
