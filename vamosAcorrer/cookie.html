@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/js" rel="stylesheet" href="js/jquery.min.js" ></script>
+<script type="text/js" rel="stylesheet" href="js/bootstrap.min.js" ></script>
+<script type="text/js" rel="stylesheet" href="css/bootstrap-grid.min.css" ></script>
+<link type="text/css" rel="stylesheet" href="css/mobilefirst.css">
+
+<title>Formulario de Contacto</title>
+
+<script>
+function setCookie(cname, cvalue, exdays){
+var d = new Date();
+d.setTime(d.getTime() + (exdays"24*60*60*1000"));
+var expires = "expires"+ d.toUTCString();
+document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+</script>
+
+</head>
+<center><h3><strong>Formulario de Contacto</strong></h3></center>
+
+<body>
+
+<div class="container">
+  <h2>Cont&aacutectanos</h2>
+  <p>
+	Para nosotros es un placer atenderte. Por eso, te ofrecemos diferentes medios para responder a cada una de tus solicitudes de la manera que m&aacutes te convenga.
+  </p>
+ <form action="contacto.html" method="POST">
+    <div class="form-group">
+	  <label for="Nombre">Nombre: </label> 
+	  <input id="Nombre" name="Nombre" type="text" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-success">Iniciar</button>
+  </form>
+</div>
+</body>
+</html>

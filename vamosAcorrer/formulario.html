@@ -9,6 +9,7 @@
 <script type="text/js" rel="stylesheet" href="js/jquery.min.js" ></script>
 <script type="text/js" rel="stylesheet" href="js/bootstrap.min.js" ></script>
 <script type="text/js" rel="stylesheet" href="css/bootstrap-grid.min.css" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <link type="text/css" rel="stylesheet" href="css/mobilefirst.css">
 
@@ -54,19 +55,41 @@ function validar_edad(){
 
 
 <script>
-   function CambiarSelect() {
-    var selectBox = document.getElementById("sexo");
-    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-    //alert(selectedValue);
-	switch (selectedValue) {
-		case "Hombre":
-	     
-        break;
-		case "Mujer":
-		
-		break;
-		}
-   }
+   function lista(sexo) {
+   //debugger;
+                $('#laboral option').remove();
+				if (sexo == 0) {
+                    $('#laboral').append('<option value="0" ">Todos...</option>');
+                }
+			    if (sexo == 1) {
+                    $('#laboral').append('<option value="0" ">Todos...</option>');
+                    $('#laboral').append('<option value="1" ">Empleado</option>');
+                    $('#laboral').append('<option value="2" ">Desempleado</option>');
+                    $('#laboral').append('<option value="3" ">Trabajo temp.</option>');
+                }
+                if (sexo == 2 ) {
+                    $('#laboral').append('<option value="0" ">Todos...</option>');
+                    $('#laboral').append('<option value="1" ">Empleada</option>');
+                    $('#laboral').append('<option value="2" ">Desempleada</option>');
+                    $('#laboral').append('<option value="3" ">Trabajo temp.</option>');
+                    $('#laboral').append('<option value="4" ">Ama de casa</option>');
+                }
+            } 
+</script>
+<script>
+function enviar(){
+	var formulario = document.getElementById("formulario");	
+	var dato = document.getElementById("edad").value;
+ 
+	if (dato >= 18){
+		alert("Se ha enviado el formulario correctamente");
+		formulario.submit();
+		return true;
+	} else {
+		alert("No se ha enviado el formulario");
+		return false;
+	}
+}
 </script>
 
 </head>
@@ -74,7 +97,7 @@ function validar_edad(){
 
 <body>
 <div class="container">
-<form action="formulario.html" method="POST">
+<form id="formulario" action="formulario.html" method="POST" onsubmit="return enviar();">
     <div class="form-group">
 	  <label for="nombre">Nombre: </label> 
 	  <input id="nombre" name="nombre" type="text" class="form-control" required>
@@ -91,12 +114,21 @@ function validar_edad(){
 	</div>
     <div class="form-group">
 	  <label for="sexo">Sexo: </label>
-	  <select id="sexo" name="sexo" class="form-group" onchange="CambiarSelect();">
-		  <option>Hombre</option>
-		  <option>Mujer</option>
+	  <select id="sexo" name="sexo" class="form-group" onchange="lista(this.value)">
+		  <option value="0" selected="selected">todos...</option>	
+		  <option value="1">Hombre</option>
+		  <option value="2">Mujer</option>
 	  </select>
     </div>
+	<div class="form-group">
+	  <label for="sexo">Estado Laboral: </label>
+	  <select id="laboral" name="laboral" class="form-group">
+		  <option value="0" selected="selected">todos...</option>
+	  </select>
+    </div>
+	
     <button type="submit" class="btn btn-success" onclick="validar_edad(); validar_datos();" >Enviar mensaje</button>
+	
 </form><br>
 </div>
 </body>
