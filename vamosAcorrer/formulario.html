@@ -55,7 +55,6 @@ function validar_edad(){
 
 
 <script>
-<<<<<<< HEAD
    function lista(sexo) {
    //debugger;
                 $('#laboral option').remove();
@@ -91,22 +90,6 @@ function enviar(){
 		return false;
 	}
 }
-=======
-   function CambiarSelect() {
-    var selectBox = document.getElementById("sexo");
-    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-    //alert(selectedValue);
-	debugger;
-	switch (selectedValue) {
-		case "Hombre":
-	    
-        break;
-		case "Mujer":
-		
-		}
-		return; 
-   }
->>>>>>> 5e6f10dfae39d25ed35cf79944c9450395ac66ff
 </script>
 
 </head>
@@ -131,18 +114,12 @@ function enviar(){
 	</div>
     <div class="form-group">
 	  <label for="sexo">Sexo: </label>
-<<<<<<< HEAD
 	  <select id="sexo" name="sexo" class="form-group" onchange="lista(this.value)">
 		  <option value="0" selected="selected">todos...</option>	
 		  <option value="1">Hombre</option>
 		  <option value="2">Mujer</option>
-=======
-	  <select id="sexo" name="sexo" class="form-group" onchange="CambiarSelect()">
-		  <option>Hombre</option>
-		  <option>Mujer</option>
->>>>>>> 5e6f10dfae39d25ed35cf79944c9450395ac66ff
 	  </select>
-    </div>
+	</div>
 	<div class="form-group">
 	  <label for="sexo">Estado Laboral: </label>
 	  <select id="laboral" name="laboral" class="form-group">
