@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script type="text/javascript" language="javascript" src="js/cambiarTema.js"></script>
-
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 <script type="text/css" rel="stylesheet" href="css/bootstrap-grid.min.css" ></script>
 <link type="text/css" rel="stylesheet" href="css/mobilefirst.css">
 <link type="text/css" rel="stylesheet" href="css/temas.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/cambiarTema.js"></script>
 
 <title>Formulario de Contacto</title>
 
@@ -35,23 +34,8 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return cname;
+    return "";
 }
-
-function checkCookie() {
-    //debugger;
-	
-    //var body = document.getElementById("body");
-    var currentClass = body.className;
-    //body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-	
-	var clase=getCookie("currentClass");
-    if (clase != "") {
-        alert("Tema Actual " + currentClass);
-    } else {
-           setCookie("currentClass", currentClass, 365);
-           }
-    }
 	
 </script>
 
@@ -59,7 +43,7 @@ function checkCookie() {
 
 <center><h3><strong>Formulario de Contacto</strong></h3></center>
 
-<body id="body" class="ligth-mode" onload="checkCookie()">
+<body id="body" class="ligth-mode">
 
 <div class="container">
   <h2>Contáctanos</h2>
@@ -84,7 +68,7 @@ function checkCookie() {
       <textarea id="Mensaje" name="Mensaje" rows="4" cols="50" autocomplete="on" class="form-control"></textarea>
     </div>
     <button type="submit" class="btn btn-success">Enviar mensaje</button><br><br>
-	<button type="button" class="btn btn-success" name="dark_light" onclick="DarkLight()">🌘</button>
+	<button type="button" class="btn btn-success" name="dark_light" onclick="setTheme()">🌘</button>
 </form><br>
 <a href="http://www.facebook.com"><img width="40" height="40" src="../vamosAcorrer/img/icono-redondo-facebook.jpg"></a><a href="http://www.facebook.com"><img width="40" height="40" src="../vamosAcorrer/img/in.jpg"></a>
 <a href="http://www.instagram.com"><img width="40" height="40" src="../vamosAcorrer/img/instagram-redondo.jpg"></a><a href="http://www.twitter.com"><img width="40" height="40" src="../vamosAcorrer/img/twitter.jpg"></a>
