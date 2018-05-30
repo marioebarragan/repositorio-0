@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$("p").each(function(i){
+if (i%2==0){
+	$(this).css("background-color", "#eee");
+}else{
+	$(this).css("background-color", "#ccc");
+}
+});
+});
+</script>
+</head>
+<body>
+	<p>Texto 1</p>
+	<p>Texto 2</p>
+	<p>Texto 3</p>
+	<p>Texto 4</p>
+</body>
+</html>
