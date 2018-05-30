@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(function(){
+	$('#info').hide();
+	$('#boton').click(function(){
+	$("#info").css('display','block');
+	})
+});
+</script>
+</head>
+<body>
+	<input type="button" id="boton" value="Mostrar contenido oculto">
+	<p id="info">
+		TextoTextoTextoTextoTextoTextoTextoTexto
+	</p>
+</body>
+</html>

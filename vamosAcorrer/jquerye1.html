@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/css" rel="stylesheet" href="css/bootstrap-grid.min.css" ></script>
+<link type="text/css" rel="stylesheet" href="css/mobilefirst.css">
+<link type="text/css" rel="stylesheet" href="css/temas.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<title>Formulario de Contacto</title>
+
+<script>
+$(function(){
+	alert("Listo...!!!");
+});
+</script>
+
+</head>
+
+<center><h3><strong>Formulario de Contacto</strong></h3></center>
+
+<body id="cuerpo">
+
+<div class="container">
+  <h2>Contáctanos</h2>
+  <p>
+	Para nosotros es un placer atenderte. Por eso, te ofrecemos diferentes medios para responder a cada una de tus solicitudes de la manera que más te convenga.
+  </p>
+<form action="contacto.html" method="POST">
+    <div class="form-group">
+	  <label for="Nombre">Nombre: </label> 
+	  <input id="Nombre" name="Nombre" type="text" class="form-control" required>
+    </div>
+	<div class="form-group">
+	 <label for="Apellido">Apellido: </label>
+	 <input id="Apellido" name="Apellido" type="text" class="form-control" required>
+	</div>
+    <div class="form-group">
+	  <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Ingrese email" required>
+    </div>
+    <div class="form-group">
+	  <label for="Mensaje">Mensaje: </label>
+      <textarea id="Mensaje" name="Mensaje" rows="4" cols="50" autocomplete="on" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Enviar mensaje</button><br><br>
+</form>
+</div>
+</body>
+</html>
