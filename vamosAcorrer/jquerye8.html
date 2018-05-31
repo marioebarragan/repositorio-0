@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#img01").mouseenter(function(){
+			$("#img01").fadeOut(1000,function(){;
+		});
+			$("#img01").fadeIn(1000,function(){;
+		});
+		});
+		///
+		$("#img02").mouseenter(function(){
+		$("#img02").fadeOut(1000,function(){;
+		});
+			$("#img02").fadeIn(1000,function(){;
+		});
+		});
+	    ///
+		$("#img03").mouseenter(function(){
+		$("#img03").fadeOut(1000,function(){;
+		});
+		$("#img03").fadeIn(1000,function(){;
+		});
+		});
+		///
+		$("#img04").mouseenter(function(){
+		$("#img04").fadeOut(1000,function(){;
+		});
+		$("#img04").fadeIn(1000,function(){;
+		});
+		});
+	});
+</script>
+
+<style>
+div.galeria {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.galeria:hover {
+    border: 1px solid #777;
+}
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div class="galeria">
+  <a target="_blank" href="../vamosAcorrer/img/01.jpg">
+    <img id="img01" src="../vamosAcorrer/img/01.jpg" alt="" width="300" height="200">
+  </a>
+  <div class="desc">Llao Llao 21K Bariloche</div>
+</div>
+<div class="galeria">
+  <a target="_blank" href="../vamosAcorrer/img/00.jpg">
+    <img id="img02" src="../vamosAcorrer/img/00.jpg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">10K Aniversario Bahía Blanca</div>
+</div>
+<div class="galeria">
+  <a target="_blank" href="../vamosAcorrer/img/03.jpg">
+    <img id="img03" src="../vamosAcorrer/img/03.jpg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">10K Aniversario Bahía Blanca</div>
+</div>
+<div class="galeria">
+  <a target="_blank" href="../vamosAcorrer/img/04.jpg">
+    <img id="img04" src="../vamosAcorrer/img/04.jpg" alt="" width="600" height="400">
+  </a>
+  <div class="desc">21K Asoc. Atletismo Bahiense</div>
+</div>
+</body>
+</html>
