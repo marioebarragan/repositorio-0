@@ -6,27 +6,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-$(document).ready(function(){
-
-	$("#checkbox_comprobar").click(function() {
+function Check (){
 		if($("#checkbox").is(':checked')) {
-			$("#checkbox_comprobar").is(':enable');
+			$('#checkbox_comprobar').attr('disabled', false);
 		} else {
-			alert("No está activado");
+			$('#checkbox_comprobar').attr('disabled', true);
 		}
-	});
-
-});
+	};
 </script>
-
 </head>
 <body>
-
 <form>
-
-<input name="checkbox" id="checkbox" type="checkbox" value="1" />
-<input name="checkbox_comprobar" id="checkbox_comprobar" type="button" disabled value="Comprobar" />
-
+	<input name="checkbox" id="checkbox" type="checkbox" onclick="Check()"/>
+	<input name="checkbox_comprobar" id="checkbox_comprobar" type="button" disabled value="Enviar" />
 </form>
 </body>
 </html>
