@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("p").hide();
+	$("#boton").click(function(){
+	$("p").slideToggle();
+});
+});
+</script>
+</head>
+<body>
+<nav title="Título">
+	<p>Menu</p>
+	<p><a href="https://www.w3schools.com">Paso 1</a></p>
+	<p><a href="https://www.w3schools.com">Paso 2</a></p>
+</nav>
+<button id="boton" value="boton">Sobre la empresa</button>
+</body>
+</html>
