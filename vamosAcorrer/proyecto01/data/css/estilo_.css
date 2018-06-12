@@ -1,0 +1,58 @@
+html, body {height:100%;}
+body {background-color:#fff; margin:0; padding:0;  font-family:"Lato", Arial, Helvetica, sans-serif; }
+* {box-sizing:border-box}
+body * {line-height:1.4em}
+h3 {margin-top:0px; font-size:22px; color:#666; font-weight:normal}
+h3 strong {color: #000}
+.error {color: #FF0000;}
+
+.cuerpo {max-width:1400px; margin:0px auto; background:#fff; }
+
+#contenido {max-width:950px; margin:0 auto; background:#fff; color: #333}
+#contenido h2 {font-weight: normal; color:#9b0f75; font-size:26px }
+#contenido strong {color: #171616}
+
+#contenido a {color: #888; text-decoration:none; }
+#contenido a:hover {color: #51cbc0; text-decoration:none; }
+
+.formulario {border-collapse:collapse;  width:100%}
+.formulario td {
+	 padding:8px; }
+
+.formulario tr:nth-child(odd) {
+   background-color: #f4f4f4;
+}
+
+.formulario input {padding:6px;  border-radius:5px; border:1px solid #9b0f75;}
+.formulario select{padding:6px;  border-radius:5px; border:1px solid #9b0f75;}
+
+.formulario input[type="submit"] {
+	padding: 10px 22px;
+	background: #9b0f75;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #9b0f75;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background .2s;
+	text-transform: lowercase;
+	margin-top: 35px;
+	font-size: 15px;
+}
+
+.formulario input[type="submit"]:hover {background:#fff; color:#9b0f75; }
+
+.cen {text-align:center}
+.etiqueta {text-align:right; width:375px}
+
+
+
+
+
+
+
+
+
+
+
+
